@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Gourmet Haven - Book a table or get in touch with our luxury restaurant team.">
+    <title>Contact Us | Gourmet Haven</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Gourmet<span>Haven</span></a>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="contact.html" class="btn btn-primary btn-book">Book A Table</a>
+                <button class="mobile-nav-toggle" aria-label="Toggle Menu" id="menuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 90px;">
+        <section class="page-banner" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover; padding: 60px 0; text-align: center; color: var(--white);">
+            <div class="container">
+                <h1 style="font-family: var(--font-heading); font-size: 3rem; margin-bottom: 10px;">Get In Touch</h1>
+                <p style="color: var(--primary-color); font-style: italic;">We would love to hear from you or host your next dining experience</p>
+            </div>
+        </section>
+
+        <section class="contact-page-content section-padding">
+            <div class="container grid-2">
+                
+                <div class="booking-form-container">
+                    <h2 style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 20px; color: var(--secondary-color);">Table Reservation</h2>
+                    <form action="#" class="booking-form" onsubmit="event.preventDefault(); alert('Reservation submitted successfully!');">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Full Name" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required class="form-control">
+                        </div>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <input type="date" required class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="time" required class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" required style="background: white;">
+                                <option value="" disabled selected>Number of Guests</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4+ People</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Special Requests (Optional)" class="form-control" rows="4" style="resize: none;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Confirm Booking</button>
+                    </form>
+                </div>
+
+                <div class="contact-details-wrapper">
+                    <span class="section-tag">Information</span>
+                    <h2 class="section-title">Where To Find Us</h2>
+                    <p class="section-desc" style="color: #555; margin-bottom: 30px;">Stop by today or reach out directly via phone or email for catering services, private events, or feedback.</p>
+                    
+                    <div class="info-list" style="margin-bottom: 40px;">
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>123 Luxury Dining Street, Karada, Baghdad, Iraq</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+964 770 000 0000</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>info@gourmethaven.com</p>
+                        </div>
+                    </div>
+
+                    <div class="map-placeholder" style="width: 100%; height: 250px; background: #e5e3df; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #777; font-weight: 500; border: 1px solid #ddd;">
+                        <div class="text-center">
+                            <i class="fa-solid fa-map-location-dot" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 10px;"></i>
+                            <p>Interactive Map Placeholder</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Gourmet<span>Haven</span></a>
+                <p>Crafting exceptional culinary experiences with passion, precision, and the finest ingredients.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-hours">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 11:00 AM - 11:00 PM</p>
+                <p>Saturday - Sunday: 10:00 AM - 12:00 AM</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Gourmet Haven. All Rights Reserved. Designed by LOUY SST.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
